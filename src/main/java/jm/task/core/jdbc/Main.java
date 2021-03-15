@@ -13,8 +13,10 @@ import static java.lang.System.*;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        Util util = new Util();
-        util.getConnection();
+//        Util util = new Util();
+//        util.getConnection();
+
+        Util.getSessionFactory();
 
         UserService userService = new UserServiceImpl();
 
