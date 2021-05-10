@@ -109,5 +109,6 @@ public class UserDaoHibernateImpl implements UserDao {
         } catch (HibernateException e) {
             e.printStackTrace();
         }
+
     }
 }
