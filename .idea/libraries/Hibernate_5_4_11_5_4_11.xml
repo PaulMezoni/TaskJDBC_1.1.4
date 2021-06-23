@@ -20,8 +20,6 @@
       <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.10.Final/jboss-logging-3.3.2.Final.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.10.Final/stax-ex-1.8.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.10.Final/txw2-2.3.1.jar!/" />
-      <root url="jar://$USER_HOME$/Downloads/hibernate-release-4.2.21.Final/lib/jpa/hibernate-entitymanager-4.2.21.Final.jar!/" />
-      <root url="jar://$USER_HOME$/Downloads/hibernate-core-5.4.29.Final.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

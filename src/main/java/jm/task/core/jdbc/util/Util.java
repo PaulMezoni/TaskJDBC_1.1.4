@@ -28,10 +28,10 @@ public class Util {
 
                 Properties settings = new Properties();
                 settings.put(Environment.DRIVER, "com.mysql.cj.jdbc.Driver");
-                settings.put(URL, "jdbc:mysql://localhost:3306/mydbtest?useUnicode=true&serverTimezone=UTC&useSSL=true&verifyServerCertificate=false");
+                settings.put(URL, "jdbc:mysql://localhost:3306/jdbc?useUnicode=true&serverTimezone=UTC&useSSL=true&verifyServerCertificate=false");
                 settings.put(USER, "root");
-                settings.put(PASS, "rootroot");
-                settings.put(Environment.DIALECT, "org.hibernate.dialect.MySQLDialect");
+                settings.put(PASS, "12345678");
+                settings.put(Environment.DIALECT, "org.hibernate.dialect.MySQL8Dialect");
 
                 settings.put(Environment.SHOW_SQL, "true");
                 settings.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");
@@ -54,9 +54,9 @@ public class Util {
         return sessionFactory;
     }
 
-    private Connection connection;
+    private static Connection connection;
 
-    public Connection getConnection() {
+    public static Connection getConnection() {
         try {
             connection = DriverManager.getConnection(URL, USER, PASS);
             System.out.println("Connect BASE");
